@@ -1,10 +1,8 @@
 from datetime import datetime
 
 from database.database import get_session
-from database.models import Photo, User, Weight
-from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, UploadFile
-from fastapi.responses import FileResponse
-from PIL import Image
+from database.models import Weight
+from fastapi import APIRouter, Depends
 from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -26,16 +24,21 @@ async def weight_view(
         stmt = stmt.where(Weight.create_dt <= end)
 
     weights = (await session.execute(stmt)).scalars().all()
-    
+
     weights_float = [weight.weight for weight in weights]
 
     return {
-        "result": {
-            "start": weights_float[-1],
-            "end": weights_float[0],
-            "max": max(weights_float),
-            "min": min(weights_float),   
-        },
+        "result": (
+            {
+                "start": weights_float[-1],
+                "end": weights_float[0],
+                "max": max(weights_float),
+                "min": min(weights_float),
+                "diff_period": weights_float[0] - weights_float[-1],
+            }
+            if len(weights_float) > 0
+            else {"start": 0, "end": 0, "max": 0, "min": 0, "diff_period": 0}
+        ),
         "data": weights,
     }
 
