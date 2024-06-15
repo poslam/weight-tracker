@@ -1,0 +1,8 @@
+categoryList: список категорий
+noCategory: нет категорий :(
+inputName: Введите название категории
+editName: Измените название категории
+categoryName: Название категории
+alreadyExists: Такая категория уже существует
+notFound: Такой категории не существует
+addCategory: Новая категория

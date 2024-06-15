@@ -1,0 +1,15 @@
+setFilter: Установить фильтр
+allTasks: Все задачи
+completedTasks: Завершенные задачи
+uncompletedTasks: Незавершенные задачи
+favouriteTasks: Избранные задачи
+taskName: Название задачи
+taskDescription: Описание задачи
+confirm: Подтвердить
+createdAt: Создано
+notFound: Такой задачи не существует
+alreadyExists: Такая задача уже существует
+noTasks: нет задач :/
+task: задача
+inputPhotoName: Введите название фото
+noImgs: Фотографии не найдены
