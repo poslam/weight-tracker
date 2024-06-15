@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:todo/core/provider/bloc.dart';
-import 'package:todo/i18n/strings.g.dart';
-import 'package:todo/presentation/states/category/list/bloc.dart';
-import 'package:todo/presentation/states/category/list/state.dart';
-import 'package:todo/presentation/widgets/category/item.dart';
+import 'package:wtracker/core/provider/bloc.dart';
+import 'package:wtracker/i18n/strings.g.dart';
+import 'package:wtracker/presentation/states/category/list/bloc.dart';
+import 'package:wtracker/presentation/states/category/list/state.dart';
+import 'package:wtracker/presentation/widgets/category/item.dart';
 
 class CategoryList extends ConsumerWidget {
   const CategoryList({super.key});

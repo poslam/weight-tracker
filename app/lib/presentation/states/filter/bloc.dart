@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo/data/models/filter.dart';
-import 'package:todo/domain/usecases/filter.dart';
-import 'package:todo/presentation/states/task/list/bloc.dart';
+import 'package:wtracker/data/models/filter.dart';
+import 'package:wtracker/domain/usecases/filter.dart';
+import 'package:wtracker/presentation/states/task/list/bloc.dart';
 import 'state.dart';
 
 class FilterListBloc extends Cubit<FilterListState> {

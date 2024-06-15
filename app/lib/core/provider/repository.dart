@@ -1,15 +1,15 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/provider/datasources.dart';
-import 'package:todo/core/provider/mappers.dart';
-import 'package:todo/data/repository/category.dart';
-import 'package:todo/data/repository/filter.dart';
-import 'package:todo/data/repository/img.dart';
-import 'package:todo/data/repository/task.dart';
-import 'package:todo/domain/repository/category.dart';
-import 'package:todo/domain/repository/filter.dart';
-import 'package:todo/domain/repository/img.dart';
-import 'package:todo/domain/repository/task.dart';
+import 'package:wtracker/core/provider/datasources.dart';
+import 'package:wtracker/core/provider/mappers.dart';
+import 'package:wtracker/data/repository/category.dart';
+import 'package:wtracker/data/repository/filter.dart';
+import 'package:wtracker/data/repository/img.dart';
+import 'package:wtracker/data/repository/task.dart';
+import 'package:wtracker/domain/repository/category.dart';
+import 'package:wtracker/domain/repository/filter.dart';
+import 'package:wtracker/domain/repository/img.dart';
+import 'package:wtracker/domain/repository/task.dart';
 
 final filterRepositoryProvider = Provider<FilterRepository>(
   (ref) => FilterRepositoryData(

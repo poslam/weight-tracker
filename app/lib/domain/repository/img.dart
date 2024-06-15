@@ -1,4 +1,4 @@
-import 'package:todo/domain/entities/img.dart';
+import 'package:wtracker/domain/entities/img.dart';
 import 'package:xml/xml.dart';
 
 abstract class ImgRepository {

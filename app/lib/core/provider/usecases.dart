@@ -1,10 +1,10 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/provider/mappers.dart';
-import 'package:todo/core/provider/repository.dart';
-import 'package:todo/domain/usecases/img.dart';
-import 'package:todo/domain/usecases/category.dart';
-import 'package:todo/domain/usecases/filter.dart';
-import 'package:todo/domain/usecases/task.dart';
+import 'package:wtracker/core/provider/mappers.dart';
+import 'package:wtracker/core/provider/repository.dart';
+import 'package:wtracker/domain/usecases/img.dart';
+import 'package:wtracker/domain/usecases/category.dart';
+import 'package:wtracker/domain/usecases/filter.dart';
+import 'package:wtracker/domain/usecases/task.dart';
 
 final categoryUseCaseProvider = Provider(
   (ref) => CategoryUseCase(

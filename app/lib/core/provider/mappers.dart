@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/data/mappers/category.dart';
-import 'package:todo/data/mappers/filter.dart';
-import 'package:todo/data/mappers/img.dart';
-import 'package:todo/data/mappers/task.dart';
+import 'package:wtracker/data/mappers/category.dart';
+import 'package:wtracker/data/mappers/filter.dart';
+import 'package:wtracker/data/mappers/img.dart';
+import 'package:wtracker/data/mappers/task.dart';
 
 final categoryMapperProvider = Provider(
   (ref) => CategoryMapper(),

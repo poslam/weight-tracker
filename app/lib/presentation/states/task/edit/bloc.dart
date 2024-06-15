@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo/domain/entities/task.dart';
-import 'package:todo/domain/usecases/task.dart';
-import 'package:todo/presentation/states/task/list/bloc.dart';
+import 'package:wtracker/domain/entities/task.dart';
+import 'package:wtracker/domain/usecases/task.dart';
+import 'package:wtracker/presentation/states/task/list/bloc.dart';
 import 'state.dart';
 
 class TaskEditBloc extends Cubit<TaskEditState> {

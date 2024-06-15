@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/navigation/bottomsheets.dart';
-import 'package:todo/domain/entities/category.dart';
-import 'package:todo/presentation/widgets/task/add.dart';
-import 'package:todo/presentation/widgets/task/list.dart';
-import 'package:todo/presentation/widgets/filter/set_filter.dart';
+import 'package:wtracker/core/navigation/bottomsheets.dart';
+import 'package:wtracker/domain/entities/category.dart';
+import 'package:wtracker/presentation/widgets/task/add.dart';
+import 'package:wtracker/presentation/widgets/task/list.dart';
+import 'package:wtracker/presentation/widgets/filter/set_filter.dart';
 
 class TaskListPage extends ConsumerWidget {
   final CategoryEntity category;

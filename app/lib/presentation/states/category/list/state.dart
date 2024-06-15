@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:todo/domain/entities/category.dart';
+import 'package:wtracker/domain/entities/category.dart';
 part 'state.freezed.dart';
 
 @freezed

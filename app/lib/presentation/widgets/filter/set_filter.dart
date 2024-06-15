@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/provider/bloc.dart';
-import 'package:todo/data/models/filter.dart';
-import 'package:todo/domain/entities/filter.dart';
-import 'package:todo/i18n/strings.g.dart';
-import 'package:todo/presentation/states/filter/bloc.dart';
-import 'package:todo/presentation/states/filter/state.dart';
+import 'package:wtracker/core/provider/bloc.dart';
+import 'package:wtracker/data/models/filter.dart';
+import 'package:wtracker/domain/entities/filter.dart';
+import 'package:wtracker/i18n/strings.g.dart';
+import 'package:wtracker/presentation/states/filter/bloc.dart';
+import 'package:wtracker/presentation/states/filter/state.dart';
 
 class Filter extends ConsumerWidget {
   final String categoryId;

@@ -1,6 +1,6 @@
-import 'package:todo/data/models/filter.dart';
-import 'package:todo/domain/entities/task.dart';
-import 'package:todo/domain/repository/filter.dart';
+import 'package:wtracker/data/models/filter.dart';
+import 'package:wtracker/domain/entities/task.dart';
+import 'package:wtracker/domain/repository/filter.dart';
 
 class FilterUseCase {
   final FilterRepository filterRepository;

@@ -1,12 +1,12 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/navigation/bottomsheets.dart';
-import 'package:todo/core/provider/bloc.dart';
-import 'package:todo/domain/entities/task.dart';
+import 'package:wtracker/core/navigation/bottomsheets.dart';
+import 'package:wtracker/core/provider/bloc.dart';
+import 'package:wtracker/domain/entities/task.dart';
 import 'package:intl/intl.dart';
-import 'package:todo/i18n/strings.g.dart';
-import 'package:todo/presentation/pages/img.dart';
+import 'package:wtracker/i18n/strings.g.dart';
+import 'package:wtracker/presentation/pages/img.dart';
 
 class TaskEditWidget extends ConsumerStatefulWidget {
   final TaskEntity task;

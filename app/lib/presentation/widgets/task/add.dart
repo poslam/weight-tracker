@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/provider/bloc.dart';
-import 'package:todo/domain/entities/category.dart';
-import 'package:todo/presentation/states/task/add/bloc.dart';
-import 'package:todo/presentation/states/task/add/state.dart';
-import 'package:todo/i18n/strings.g.dart';
+import 'package:wtracker/core/provider/bloc.dart';
+import 'package:wtracker/domain/entities/category.dart';
+import 'package:wtracker/presentation/states/task/add/bloc.dart';
+import 'package:wtracker/presentation/states/task/add/state.dart';
+import 'package:wtracker/i18n/strings.g.dart';
 
 class TaskAddWidget extends ConsumerStatefulWidget {
   final CategoryEntity category;

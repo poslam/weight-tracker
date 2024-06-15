@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/provider/bloc.dart';
-import 'package:todo/domain/entities/task.dart';
-import 'package:todo/presentation/widgets/img/button.dart';
-import 'package:todo/presentation/widgets/img/gallery.dart';
-import 'package:todo/presentation/widgets/img/text_field.dart';
+import 'package:wtracker/core/provider/bloc.dart';
+import 'package:wtracker/domain/entities/task.dart';
+import 'package:wtracker/presentation/widgets/img/button.dart';
+import 'package:wtracker/presentation/widgets/img/gallery.dart';
+import 'package:wtracker/presentation/widgets/img/text_field.dart';
 
 class ImgWidget extends ConsumerStatefulWidget {
   final TaskEntity task;

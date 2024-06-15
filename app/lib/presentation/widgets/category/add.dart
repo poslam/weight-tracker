@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/provider/bloc.dart';
-import 'package:todo/i18n/strings.g.dart';
-import 'package:todo/presentation/states/category/add/bloc.dart';
-import 'package:todo/presentation/states/category/add/state.dart';
+import 'package:wtracker/core/provider/bloc.dart';
+import 'package:wtracker/i18n/strings.g.dart';
+import 'package:wtracker/presentation/states/category/add/bloc.dart';
+import 'package:wtracker/presentation/states/category/add/state.dart';
 
 class CategoryAddWidget extends ConsumerStatefulWidget {
   const CategoryAddWidget({super.key});

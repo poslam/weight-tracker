@@ -4,10 +4,10 @@ import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as p;
-import 'package:todo/data/models/category.dart';
-import 'package:todo/data/models/filter.dart';
-import 'package:todo/data/models/img.dart';
-import 'package:todo/data/models/task.dart';
+import 'package:wtracker/data/models/category.dart';
+import 'package:wtracker/data/models/filter.dart';
+import 'package:wtracker/data/models/img.dart';
+import 'package:wtracker/data/models/task.dart';
 
 part 'db.g.dart';
 

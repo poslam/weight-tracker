@@ -1,9 +1,9 @@
 import 'package:drift/drift.dart';
-import 'package:todo/data/datasources/db.dart';
-import 'package:todo/data/mappers/filter.dart';
-import 'package:todo/data/models/filter.dart';
-import 'package:todo/domain/entities/filter.dart';
-import 'package:todo/domain/repository/filter.dart';
+import 'package:wtracker/data/datasources/db.dart';
+import 'package:wtracker/data/mappers/filter.dart';
+import 'package:wtracker/data/models/filter.dart';
+import 'package:wtracker/domain/entities/filter.dart';
+import 'package:wtracker/domain/repository/filter.dart';
 
 class FilterRepositoryData implements FilterRepository {
   final AppDatabase db;

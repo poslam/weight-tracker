@@ -1,6 +1,6 @@
 import 'package:drift/drift.dart';
-import 'package:todo/data/datasources/db.dart';
-import 'package:todo/domain/entities/task.dart';
+import 'package:wtracker/data/datasources/db.dart';
+import 'package:wtracker/domain/entities/task.dart';
 
 class TaskMapper {
   Future<TaskModelCompanion> mapTaskEntity(TaskEntity task) async {

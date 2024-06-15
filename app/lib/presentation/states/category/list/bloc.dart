@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo/domain/usecases/category.dart';
+import 'package:wtracker/domain/usecases/category.dart';
 import 'state.dart';
 
 class CategoryListBloc extends Cubit<CategoryListState> {

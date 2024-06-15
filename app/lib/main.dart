@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/i18n/strings.g.dart';
-import 'package:todo/core/utils.dart';
-import 'package:todo/presentation/pages/category.dart';
+import 'package:wtracker/i18n/strings.g.dart';
+import 'package:wtracker/core/utils.dart';
+import 'package:wtracker/presentation/pages/category.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +24,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'weight-tracker',
+      title: 'wtracker',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,

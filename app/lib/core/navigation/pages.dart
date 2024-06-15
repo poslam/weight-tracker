@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:todo/domain/entities/category.dart';
-import 'package:todo/domain/entities/task.dart';
-import 'package:todo/presentation/pages/task.dart';
-import 'package:todo/presentation/pages/tasks.dart';
+import 'package:wtracker/domain/entities/category.dart';
+import 'package:wtracker/domain/entities/task.dart';
+import 'package:wtracker/presentation/pages/task.dart';
+import 'package:wtracker/presentation/pages/tasks.dart';
 
 void openTaskListPage(CategoryEntity category, BuildContext context) {
   Navigator.of(context).push(

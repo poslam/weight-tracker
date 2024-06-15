@@ -1,6 +1,6 @@
-import 'package:todo/data/mappers/img.dart';
-import 'package:todo/domain/entities/img.dart';
-import 'package:todo/domain/repository/img.dart';
+import 'package:wtracker/data/mappers/img.dart';
+import 'package:wtracker/domain/entities/img.dart';
+import 'package:wtracker/domain/repository/img.dart';
 import 'package:uuid/uuid.dart';
 import 'package:xml/xml.dart';
 

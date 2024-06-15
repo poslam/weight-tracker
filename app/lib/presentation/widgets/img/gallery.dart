@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/provider/bloc.dart';
-import 'package:todo/presentation/states/img/bloc.dart';
-import 'package:todo/presentation/states/img/state.dart';
-import 'package:todo/presentation/widgets/img/img.dart';
+import 'package:wtracker/core/provider/bloc.dart';
+import 'package:wtracker/presentation/states/img/bloc.dart';
+import 'package:wtracker/presentation/states/img/state.dart';
+import 'package:wtracker/presentation/widgets/img/img.dart';
 
 class ImgGallery extends ConsumerWidget {
   final TextEditingController perPageController;

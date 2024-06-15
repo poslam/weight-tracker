@@ -1,13 +1,13 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/provider/usecases.dart';
-import 'package:todo/presentation/states/category/add/bloc.dart';
-import 'package:todo/presentation/states/category/edit/bloc.dart';
-import 'package:todo/presentation/states/category/list/bloc.dart';
-import 'package:todo/presentation/states/filter/bloc.dart';
-import 'package:todo/presentation/states/task/add/bloc.dart';
-import 'package:todo/presentation/states/task/edit/bloc.dart';
-import 'package:todo/presentation/states/img/bloc.dart';
-import 'package:todo/presentation/states/task/list/bloc.dart';
+import 'package:wtracker/core/provider/usecases.dart';
+import 'package:wtracker/presentation/states/category/add/bloc.dart';
+import 'package:wtracker/presentation/states/category/edit/bloc.dart';
+import 'package:wtracker/presentation/states/category/list/bloc.dart';
+import 'package:wtracker/presentation/states/filter/bloc.dart';
+import 'package:wtracker/presentation/states/task/add/bloc.dart';
+import 'package:wtracker/presentation/states/task/edit/bloc.dart';
+import 'package:wtracker/presentation/states/img/bloc.dart';
+import 'package:wtracker/presentation/states/task/list/bloc.dart';
 
 final categoryListBlocProvider = Provider(
   (ref) => CategoryListBloc(

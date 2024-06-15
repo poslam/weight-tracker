@@ -1,6 +1,6 @@
 import 'package:drift/drift.dart';
-import 'package:todo/data/datasources/db.dart';
-import 'package:todo/domain/entities/img.dart';
+import 'package:wtracker/data/datasources/db.dart';
+import 'package:wtracker/domain/entities/img.dart';
 import 'package:xml/xml.dart';
 
 class ImgMapper {

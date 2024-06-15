@@ -1,4 +1,4 @@
-import 'package:todo/domain/entities/category.dart';
+import 'package:wtracker/domain/entities/category.dart';
 
 abstract class CategoryRepository {
   Future<List<CategoryEntity>> getCategories();

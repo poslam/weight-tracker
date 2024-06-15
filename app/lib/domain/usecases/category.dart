@@ -1,6 +1,6 @@
-import 'package:todo/data/mappers/category.dart';
-import 'package:todo/domain/entities/category.dart';
-import 'package:todo/domain/repository/category.dart';
+import 'package:wtracker/data/mappers/category.dart';
+import 'package:wtracker/domain/entities/category.dart';
+import 'package:wtracker/domain/repository/category.dart';
 import 'package:uuid/uuid.dart';
 
 class CategoryUseCase {

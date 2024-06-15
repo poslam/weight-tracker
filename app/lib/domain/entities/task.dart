@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:todo/domain/entities/img.dart';
+import 'package:wtracker/domain/entities/img.dart';
 part 'task.freezed.dart';
 
 @freezed

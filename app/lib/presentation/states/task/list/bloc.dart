@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo/domain/entities/task.dart';
-import 'package:todo/domain/usecases/task.dart';
+import 'package:wtracker/domain/entities/task.dart';
+import 'package:wtracker/domain/usecases/task.dart';
 import 'state.dart';
 
 class TaskListBloc extends Cubit<TaskListState> {

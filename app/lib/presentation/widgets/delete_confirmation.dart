@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo/i18n/strings.g.dart';
+import 'package:wtracker/i18n/strings.g.dart';
 
 class ConfirmationDeleteDialog extends StatelessWidget {
   final Function delFunc;

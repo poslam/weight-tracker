@@ -1,4 +1,4 @@
-import 'package:todo/domain/entities/task.dart';
+import 'package:wtracker/domain/entities/task.dart';
 
 abstract class TaskRepository {
   Future<List<TaskEntity>> getTasks(String categoryId);

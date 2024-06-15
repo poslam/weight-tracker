@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:todo/data/datasources/db.dart';
-import 'package:todo/data/mappers/img.dart';
-import 'package:todo/domain/entities/img.dart';
-import 'package:todo/domain/repository/img.dart';
+import 'package:wtracker/data/datasources/db.dart';
+import 'package:wtracker/data/mappers/img.dart';
+import 'package:wtracker/domain/entities/img.dart';
+import 'package:wtracker/domain/repository/img.dart';
 import 'package:xml/xml.dart';
 
 class ImgRepositoryData implements ImgRepository {
@@ -49,7 +49,7 @@ class ImgRepositoryData implements ImgRepository {
   Future<void> addImgs(String taskId, List<ImgEntity> imgs) async {
     final List<ImgModelCompanion> imgsDb = await Future.wait(
         imgs.map((img) => imgMapper.mapImgEntity(img)).toList());
-        
+
     await db.batch((batch) {
       batch.insertAll(db.imgModel, imgsDb);
     });

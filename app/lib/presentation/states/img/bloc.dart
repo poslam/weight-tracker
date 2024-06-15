@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo/domain/usecases/img.dart';
-import 'package:todo/i18n/strings.g.dart';
-import 'package:todo/presentation/states/task/edit/bloc.dart';
+import 'package:wtracker/domain/usecases/img.dart';
+import 'package:wtracker/i18n/strings.g.dart';
+import 'package:wtracker/presentation/states/task/edit/bloc.dart';
 import 'state.dart';
 
 class ImgBloc extends Cubit<ImgState> {

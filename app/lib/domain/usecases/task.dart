@@ -1,9 +1,9 @@
-import 'package:todo/data/mappers/task.dart';
-import 'package:todo/domain/entities/img.dart';
-import 'package:todo/domain/entities/task.dart';
-import 'package:todo/domain/repository/task.dart';
-import 'package:todo/domain/usecases/filter.dart';
-import 'package:todo/domain/usecases/img.dart';
+import 'package:wtracker/data/mappers/task.dart';
+import 'package:wtracker/domain/entities/img.dart';
+import 'package:wtracker/domain/entities/task.dart';
+import 'package:wtracker/domain/repository/task.dart';
+import 'package:wtracker/domain/usecases/filter.dart';
+import 'package:wtracker/domain/usecases/img.dart';
 import 'package:uuid/uuid.dart';
 
 class TaskUseCase {

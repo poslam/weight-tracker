@@ -1,5 +1,5 @@
 import 'package:drift/drift.dart';
-import 'package:todo/data/models/category.dart';
+import 'package:wtracker/data/models/category.dart';
 
 enum FilterStatus { all, completed, uncompleted, favourite }
 

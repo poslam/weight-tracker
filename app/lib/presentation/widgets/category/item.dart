@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo/core/navigation/bottomsheets.dart';
-import 'package:todo/core/navigation/pages.dart';
-import 'package:todo/core/provider/bloc.dart';
-import 'package:todo/domain/entities/category.dart';
-import 'package:todo/presentation/widgets/category/edit.dart';
-import 'package:todo/presentation/widgets/delete_confirmation.dart';
+import 'package:wtracker/core/navigation/bottomsheets.dart';
+import 'package:wtracker/core/navigation/pages.dart';
+import 'package:wtracker/core/provider/bloc.dart';
+import 'package:wtracker/domain/entities/category.dart';
+import 'package:wtracker/presentation/widgets/category/edit.dart';
+import 'package:wtracker/presentation/widgets/delete_confirmation.dart';
 
 class CategoryItemWidget extends ConsumerWidget {
   final CategoryEntity category;

@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo/domain/usecases/category.dart';
-import 'package:todo/i18n/strings.g.dart';
-import 'package:todo/presentation/states/category/list/bloc.dart';
+import 'package:wtracker/domain/usecases/category.dart';
+import 'package:wtracker/i18n/strings.g.dart';
+import 'package:wtracker/presentation/states/category/list/bloc.dart';
 import 'state.dart';
 
 class CategoryEditBloc extends Cubit<CategoryEditState> {

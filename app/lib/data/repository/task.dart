@@ -1,9 +1,9 @@
 import 'package:drift/drift.dart';
-import 'package:todo/data/datasources/db.dart';
-import 'package:todo/data/mappers/task.dart';
-import 'package:todo/domain/entities/task.dart';
-import 'package:todo/domain/repository/filter.dart';
-import 'package:todo/domain/repository/task.dart';
+import 'package:wtracker/data/datasources/db.dart';
+import 'package:wtracker/data/mappers/task.dart';
+import 'package:wtracker/domain/entities/task.dart';
+import 'package:wtracker/domain/repository/filter.dart';
+import 'package:wtracker/domain/repository/task.dart';
 
 class TaskRepositoryData implements TaskRepository {
   final AppDatabase db;

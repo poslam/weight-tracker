@@ -1,8 +1,8 @@
 import 'package:drift/drift.dart';
-import 'package:todo/data/datasources/db.dart';
-import 'package:todo/data/mappers/category.dart';
-import 'package:todo/domain/entities/category.dart';
-import 'package:todo/domain/repository/category.dart';
+import 'package:wtracker/data/datasources/db.dart';
+import 'package:wtracker/data/mappers/category.dart';
+import 'package:wtracker/domain/entities/category.dart';
+import 'package:wtracker/domain/repository/category.dart';
 
 class CategoryRepositoryData implements CategoryRepository {
   final AppDatabase db;
