@@ -1,4 +1,4 @@
-package com.example.todo
+package ru.wtracker
 
 import io.flutter.embedding.android.FlutterActivity
 
