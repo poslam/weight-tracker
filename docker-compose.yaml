@@ -1,0 +1,53 @@
+name: weight-tracker
+
+services:
+
+    database:
+        image: postgres:16
+        restart: always
+        environment:
+            POSTGRES_PASSWORD: postgres
+        volumes:
+            - ./back/dumps:/docker-entrypoint-initdb.d
+            - ./back/dumps:/dumps
+            - ./db_data:/var/lib/postgresql/data
+
+    api:
+        links:
+            - database
+        image: api
+        restart: always
+        environment:
+            DB_NAME: postgres
+            DB_PORT: 5432
+            DB_PASS: postgres
+            DB_USER: postgres
+            DB_HOST: database
+        env_file:
+            - back/.env
+        build: ./back/api
+        command: python -m uvicorn src.app:app --host 0.0.0.0 --port 8000 --reload
+        volumes:
+            - ./back/api/static:/core/static
+    
+    # frontend:
+    #     build: ./front
+    #     volumes:
+    #         - web:/app/dist
+
+    nginx:
+        image: nginx:1.25.4
+        volumes:
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+            - ./nginx/mime.types:/etc/nginx/mime.types
+            # - web:/app/dist
+        ports:
+            - 801:80
+        depends_on:
+            - api
+            # - frontend
+            
+volumes:
+    data:
+        driver: local
+    # web:

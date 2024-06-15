@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = ["poslam <kirden04@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.105.0"
+sqlalchemy = "^2.0.23"
+pillow = "^10.1.0"
+werkzeug = "^3.0.1"
+pyjwt = "^2.8.0"
+alembic = "^1.13.1"
+python-dotenv = "^1.0.0"
+uvicorn = "^0.25.0"
+asyncpg = "^0.29.0"
+ujson = "^5.9.0"
+python-multipart = "^0.0.6"
+greenlet = "^3.0.3"
+pydantic = {extras = ["email"], version = "^2.7.3"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+pre-commit = "^3.6.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
