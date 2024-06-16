@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/utils.dart';
-import 'presentation/pages/category.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,7 +34,7 @@ class App extends StatelessWidget {
         ),
       ),
       themeMode: ThemeMode.system,
-      home: const CategoryListPage(),
+      // home: const CategoryListPage(),
       debugShowCheckedModeBanner: false,
     );
   }

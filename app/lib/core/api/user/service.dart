@@ -8,8 +8,8 @@ part '../../../.gen/core/api/user/service.chopper.dart';
 
 @ChopperApi()
 abstract class UserService extends ChopperService {
-  Future<UserViewResponse> view(String token) async {
-    final response = await _view(token);
+  Future<UserViewResponse> view() async {
+    final response = await _view();
 
     if (response.statusCode != 200) {
       final error = jsonDecode(response.error as String);
@@ -20,9 +20,7 @@ abstract class UserService extends ChopperService {
   }
 
   @Post(path: '/user/view')
-  Future<Response> _view(
-    @Header("auth") String token,
-  );
+  Future<Response> _view();
 
   static UserService create([ChopperClient? client]) => _$UserService(client);
 }

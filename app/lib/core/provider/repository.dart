@@ -12,8 +12,7 @@ final class ProviderRepository {
 
   static final tokenRepository = Provider<TokenRepository>(
     (ref) => TokenRepositoryImpl(
-      ref.watch(ProviderApi.token),
-      ref.watch(ProviderApi.login),
+      ref.watch(ProviderApi.auth),
       ref.watch(ProviderStorage.token),
     ),
   );
