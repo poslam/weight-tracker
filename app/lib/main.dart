@@ -5,7 +5,7 @@ import 'core/utils.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  settingUpSystemUIOverlay();
+  setUpSystemUIOverlay();
 
   runApp(
     const ProviderScope(

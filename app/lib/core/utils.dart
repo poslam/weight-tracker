@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-void settingUpSystemUIOverlay() {
-  SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
+void setUpSystemUIOverlay() {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
       systemStatusBarContrastEnforced: false,
       systemNavigationBarColor: Colors.transparent,
-      systemNavigationBarDividerColor: Colors.transparent,
-    ),
-  );
+      systemNavigationBarDividerColor: Colors.transparent));
+      
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
 }
