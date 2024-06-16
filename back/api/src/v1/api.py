@@ -11,12 +11,14 @@ from PIL import Image
 from sqlalchemy import insert, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from src.v1.auth import auth_router, login_required
+from src.v1.user import user_router
 from src.v1.weight import weight_router
 
 router = APIRouter()
 
 router.include_router(auth_router, prefix="/auth")
 router.include_router(weight_router, prefix="/weight")
+router.include_router(user_router, prefix="/user")
 
 
 @router.get("/healthcheck")

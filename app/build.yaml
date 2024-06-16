@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      source_gen|combining_builder:
+        options:
+          build_extensions:
+            "^lib/{{}}.dart": "lib/.gen/{{}}.g.dart"
+      freezed|freezed:
+        options:
+          build_extensions:
+            "^lib/{{}}.dart": "lib/.gen/{{}}.freezed.dart"
+      chopper_generator|chopper_generator:
+        options:
+          build_extensions:
+            "^lib/{{}}.dart": "lib/.gen/{{}}.chopper.dart"

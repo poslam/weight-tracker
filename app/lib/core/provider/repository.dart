@@ -1,42 +1,26 @@
-import 'package:dio/dio.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:wtracker/core/provider/datasources.dart';
-import 'package:wtracker/core/provider/mappers.dart';
-import 'package:wtracker/data/repository/category.dart';
-import 'package:wtracker/data/repository/filter.dart';
-import 'package:wtracker/data/repository/img.dart';
-import 'package:wtracker/data/repository/task.dart';
-import 'package:wtracker/domain/repository/category.dart';
-import 'package:wtracker/domain/repository/filter.dart';
-import 'package:wtracker/domain/repository/img.dart';
-import 'package:wtracker/domain/repository/task.dart';
+import 'package:riverpod/riverpod.dart';
 
-final filterRepositoryProvider = Provider<FilterRepository>(
-  (ref) => FilterRepositoryData(
-    db: ref.watch(dbProvider),
-    filterMapper: ref.watch(filterMapperProvider),
-  ),
-);
+import '../repositories/token/interface.dart';
+import '../repositories/token/repository.dart';
+import '../repositories/user/interface.dart';
+import '../repositories/user/repository.dart';
+import 'api.dart';
+import 'storage.dart';
 
-final taskRepositoryProvider = Provider<TaskRepository>(
-  (ref) => TaskRepositoryData(
-    db: ref.watch(dbProvider),
-    filterRepository: ref.watch(filterRepositoryProvider),
-    taskMapper: ref.watch(taskMapperProvider),
-  ),
-);
+final class ProviderRepository {
+  ProviderRepository._();
 
-final categoryRepositoryProvider = Provider<CategoryRepository>(
-  (ref) => CategoryRepositoryData(
-    db: ref.watch(dbProvider),
-    categoryMapper: ref.watch(categoryMapperProvider),
-  ),
-);
+  static final tokenRepository = Provider<TokenRepository>(
+    (ref) => TokenRepositoryImpl(
+      ref.watch(ProviderApi.token),
+      ref.watch(ProviderApi.login),
+      ref.watch(ProviderStorage.token),
+    ),
+  );
 
-final imgRepositoryProvider = Provider<ImgRepository>(
-  (ref) => ImgRepositoryData(
-    dio: Dio(),
-    imgMapper: ref.watch(imgMapperProvider),
-    db: ref.watch(dbProvider),
-  ),
-);
+  static final userRepository = Provider<UserRepository>(
+    (ref) => UserRepositoryImpl(
+      ref.watch(ProviderApi.user),
+    ),
+  );
+}

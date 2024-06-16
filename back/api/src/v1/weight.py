@@ -34,7 +34,7 @@ async def weight_view(
                 "end": weights_float[0],
                 "max": max(weights_float),
                 "min": min(weights_float),
-                "diff_period": weights_float[0] - weights_float[-1],
+                "diff_period": round(weights_float[0] - weights_float[-1], 1),
             }
             if len(weights_float) > 0
             else {"start": 0, "end": 0, "max": 0, "min": 0, "diff_period": 0}

@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:wtracker/i18n/strings.g.dart';
-import 'package:wtracker/core/utils.dart';
-import 'package:wtracker/presentation/pages/category.dart';
+import 'core/utils.dart';
+import 'presentation/pages/category.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   settingUpSystemUIOverlay();
-
-  LocaleSettings.useDeviceLocale();
 
   runApp(
     const ProviderScope(
