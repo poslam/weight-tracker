@@ -3,6 +3,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part '../../../.gen/core/api/weight/models.freezed.dart';
+part '../../../.gen/core/api/weight/models.g.dart';
 
 @freezed
 class WeightResponse with _$WeightResponse {

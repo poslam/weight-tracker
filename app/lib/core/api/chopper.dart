@@ -2,6 +2,7 @@ import 'package:chopper/chopper.dart';
 
 import '../repositories/token/interface.dart';
 import 'auth/service.dart';
+import 'interceptor/logger.dart';
 import 'interceptor/token.dart';
 import 'user/service.dart';
 import 'weight/service.dart';
@@ -19,6 +20,8 @@ final class Api extends ChopperClient {
           converter: const JsonConverter(),
           interceptors: [
             TokenInterceptor(tokenRepository),
+            RequestLoggerInterceptor(),
+            ResponseLoggerInterceptor(),
           ],
         );
 }
@@ -32,5 +35,9 @@ final class SessionApi extends ChopperClient {
             AuthService.create(),
           ],
           converter: const JsonConverter(),
+          interceptors: [
+            RequestLoggerInterceptor(),
+            ResponseLoggerInterceptor(),
+          ],
         );
 }

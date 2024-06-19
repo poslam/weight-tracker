@@ -3,6 +3,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part '../../../.gen/core/api/auth/models.freezed.dart';
+part '../../../.gen/core/api/auth/models.g.dart';
 
 @freezed
 class LoginResponse with _$LoginResponse {

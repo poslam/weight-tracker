@@ -1,0 +1,7 @@
+emailOrPhone: Email или телефон
+password: Пароль
+login: Войти
+emailOrPhoneRequired: Пожалуйста, введите email или телефон
+invalidEmail: Неверный email
+invalidPhone: Неверный телефон
+passwordRequired: Пожалуйста, введите пароль

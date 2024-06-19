@@ -3,6 +3,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part '../../../.gen/core/api/user/models.freezed.dart';
+part '../../../.gen/core/api/user/models.g.dart';
 
 @freezed
 class UserViewResponse with _$UserViewResponse {
